@@ -1,0 +1,62 @@
+.search-bar {
+  height: 60px;
+  margin: 20px;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  min-width: 0;
+  padding-bottom: 8px;
+  padding-top: 7px;
+}
+.logo-youtube img {
+  width: 150px;
+  margin-top: -28px;
+}
+.search-bar input {
+  width: 75%;
+  padding: 7px;
+}
+
+
+.video-item img {
+  max-width: 64px;
+}
+
+.video-item-view, .video-detail, .details {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd !important;
+  border-radius: 4px;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: #eee;
+}
+
+.list-group {
+  margin-left: 20px;
+  width: 30%;
+}
+
+.video-detail {
+  background: #ccc;
+}
+
+.video-detail .details {
+  background: #20825d;
+  color: #fff;
+}
+
+.sign-in {
+  background-color: #167ac6;
+  color: #fff;
+  padding: 8px 0px;
+  max-width: 70px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
