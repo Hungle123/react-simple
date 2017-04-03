@@ -1,21 +1,28 @@
 .search-bar {
-  height: 60px;
   margin: 20px;
+  text-align: center;
   background: #fff;
   border-bottom: 1px solid #e8e8e8;
   min-width: 0;
   padding-bottom: 8px;
   padding-top: 7px;
-}
-.logo-youtube img {
-  width: 150px;
-  margin-top: -28px;
-}
-.search-bar input {
-  width: 75%;
-  padding: 7px;
+  position: relative;
 }
 
+.logo-youtobe {
+  background-image: url('../image/youtube-logo-full-color.png');
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+}
+
+.search-bar input {
+  width: 75%;
+  background: #ccc;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
 
 .video-item img {
   max-width: 64px;
@@ -50,33 +57,3 @@
   color: #fff;
 }
 
-.sign-in {
-  background-color: #167ac6;
-  color: #fff;
-  padding: 8px 0px;
-  max-width: 70px;
-  text-align: center;
-  font-size: 12px;
-  border-radius: 3px;
-}
-
-.tr-style {
-  background-color: #ccc;
-}
-
-.header-style {
-  background-color: #fff;
-  color: hotpink;
-  font-size: 15px;
-}
-
-.btn-react {
-  margin: 80px 50px;
-  width: 100px;
-}
-
-.color-heart {
-  color: red;
-  font-weight: bold;
-  font-size: 15px;
-}
