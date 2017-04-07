@@ -16,7 +16,6 @@
   padding: 7px;
 }
 
-
 .video-item img {
   max-width: 64px;
 }
@@ -42,12 +41,13 @@
 }
 
 .video-detail {
-  background: #ccc;
+  background: #fff;
 }
 
 .video-detail .details {
   background: #20825d;
   color: #fff;
+  margin-bottom: 60px;
 }
 
 .sign-in {
@@ -60,3 +60,64 @@
   border-radius: 3px;
 }
 
+.tr-style {
+  background-color: #ccc;
+}
+
+.header-style {
+  background-color: #fff;
+  color: hotpink;
+  font-size: 15px;
+}
+
+.btn-react {
+  margin: 80px 50px;
+  width: 100px;
+}
+
+.color-heart {
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+ li{
+  margin: 10px;
+}
+
+.navbar .nav-pills .active {
+   color: green;
+   font-weight:bold;
+}
+
+.navbar .nav-pills >li >a {
+    color: orange;
+    background-color: #222222;
+ }
+
+.navbar .nav-pills > a {
+    background-color: orange;
+     color: black;
+}
+
+.footer-simple-app {
+  border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0;
+  margin-top: 20px;
+  padding-top: 0px;
+  background-color: #ccc;
+}
+a.active {
+  text-decoration: underline !important;
+}
+.logo-app, .logo-app a {
+  height: 10px;
+  margin-top: 0px;
+}
+
+.selected {
+  color: red !important;
+}
