@@ -12,7 +12,7 @@ class VideoDetail extends Component {
     return (
       <div className="video-detail col-md-8">
         <div className="embed-responsive embed-responsive-16by9">
-          <iframe src={url} frameborder="0" className="video-detail-view embed-responsive-item"/>
+          <iframe src={url} frameBorder="0" className="video-detail-view embed-responsive-item"/>
         </div>
 
         <div className="details">

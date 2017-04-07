@@ -6,13 +6,13 @@ import Heading from './components/heading';
 import Row from './components/row';
 
 
-class CommentApp extends Component {
+class Comment extends Component {
 
   constructor() {
     super();
     this.state = {
       data: [],
-      headers: ['Updated At', 'Author', 'Change'],
+      headers: ['Id', 'Updated At', 'Author', 'Change'],
       color: '#ccc',
       currentEvent: '---'
     };
@@ -40,6 +40,7 @@ class CommentApp extends Component {
   mapOpenLibraryDataToChangeSet(data){
     return data.map((change, index) => {
       return {
+        "id" : change.id,
         "when": change.timestamp,
         "who": change.author.key,
         "description": change.comment
@@ -76,7 +77,7 @@ class CommentApp extends Component {
     const author = this.props.author;    
     const headers = this.state.headers.map((item, index) => {
       return(
-        <Heading key={index} header={item} type={true}/>
+        <Heading key={index} header={item} type={true} />
       );
     }); 
 
@@ -95,17 +96,6 @@ class CommentApp extends Component {
 
     return(
       <section>
-      {/* -- Create menu for your app -- */}
-      <div className="menu">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-        {this.props.children}
-      </div>
-      {/* -- END menu -- */}
-
         <h1>{title}</h1>
         <table className="table table-bordered">
           <thead>
@@ -155,11 +145,11 @@ class Heart extends Component {
   }
 }
 
-CommentApp.propTypes = {
+Comment.propTypes = {
   color(props, propName, componentName){
     if(!props.title === 'ReactJS'){
       return new Error(`Custom message validate for props title!`);
     }
   }
 }
-export default CommentApp;
+export default Comment;

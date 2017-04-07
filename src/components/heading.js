@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
-
 class Heading extends Component {
-  //
-  // return color red if in this page is errors
-  // return color green if in this page is success
-  // 
   typeColor(){
     const success = {
       color: 'hotpink',
