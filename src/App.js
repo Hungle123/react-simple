@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import '../public/style/style.css';
 import SearchBar from './components/search_bar';
 import VideoDetail from './components/video_detail';
 import VideoList from './components/video_list';
-import YTSearch from 'youtube-api-search'
+import Heading from './components/heading';
+import YTSearch from 'youtube-api-search';
+
 
 // YOUTUBE API KEY
 const API_KEY = 'AIzaSyBto8oTLJ4cNc4vLk94Vz2lISJtjmGra6M'
@@ -18,7 +20,6 @@ class App extends Component {
       videos: [],
       selectedVideo: null
     };
-
     this.videoSearch('reactjs');
   }
 
@@ -34,6 +35,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Heading/>
         <SearchBar onSearchTermChange = {(term) => this.videoSearch(term)}/>
         <VideoDetail video = {this.state.selectedVideo}/>
         <VideoList videos = {this.state.videos}
@@ -44,3 +46,5 @@ class App extends Component {
 }
 
 export default App;
+
+
